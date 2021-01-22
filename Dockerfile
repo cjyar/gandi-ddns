@@ -15,4 +15,4 @@ RUN pytest
 
 FROM base as target
 
-CMD [ "./gandi_ddns.py" ]
+ENTRYPOINT [ "python3", "./gandi_ddns.py" ]
